@@ -15,7 +15,7 @@ void shellSort(int* arr, int arrlength, int step)
 	{
 		for (int j = i + step; j < arrlength; j+=step)
 		{
-			for (int k = i; i < j; i += step)
+			for (int k = i; k < j; k += step)
 			{
 				if (arr[j] < arr[i])
 				{
