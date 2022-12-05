@@ -13,7 +13,7 @@ void StactPushBank(ST* Stact, STDateType x)
 	assert(Stact);
 	if (Stact->capacity == Stact->top)
 	{
-		STDateType* tmp = (STDateType*)realloc(Stact->date, Stact->capacity * 2);
+		STDateType* tmp = (STDateType*)realloc(Stact->date, sizeof(STDateType)*Stact->capacity * 2);
 		if (tmp==NULL)
 		{
 			perror("realloc");
