@@ -48,6 +48,7 @@ void PrintList(SListNode* phead)
 }
 
 
+
 //Î²²å
 void STLPushBank(SListNode** pphead, SLTDataType x)
 {
@@ -214,3 +215,5 @@ void SListDestroy(SListNode** pphead)
 	}
 	*pphead = NULL;
 }
+
+
